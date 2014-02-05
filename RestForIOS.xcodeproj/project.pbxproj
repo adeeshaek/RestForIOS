@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77DDE0F918A28D7B00BE8291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DDE0F818A28D7B00BE8291 /* Foundation.framework */; };
+		77DDE10718A28D7B00BE8291 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DDE10618A28D7B00BE8291 /* XCTest.framework */; };
+		77DDE10818A28D7B00BE8291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DDE0F818A28D7B00BE8291 /* Foundation.framework */; };
+		77DDE10A18A28D7B00BE8291 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DDE10918A28D7B00BE8291 /* UIKit.framework */; };
+		77DDE10D18A28D7B00BE8291 /* libRestForIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DDE0F518A28D7B00BE8291 /* libRestForIOS.a */; };
+		77DDE11318A28D7B00BE8291 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77DDE11118A28D7B00BE8291 /* InfoPlist.strings */; };
+		77DDE11518A28D7B00BE8291 /* RestForIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DDE11418A28D7B00BE8291 /* RestForIOSTests.m */; };
+		77DDE12018A28DA100BE8291 /* RestForIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DDE11F18A28DA100BE8291 /* RestForIOS.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77DDE10B18A28D7B00BE8291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77DDE0ED18A28D7B00BE8291 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77DDE0F418A28D7B00BE8291;
+			remoteInfo = RestForIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77DDE0F318A28D7B00BE8291 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		77DDE0F518A28D7B00BE8291 /* libRestForIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRestForIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		77DDE0F818A28D7B00BE8291 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		77DDE0FC18A28D7B00BE8291 /* RestForIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RestForIOS-Prefix.pch"; sourceTree = "<group>"; };
+		77DDE10518A28D7B00BE8291 /* RestForIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestForIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77DDE10618A28D7B00BE8291 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		77DDE10918A28D7B00BE8291 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		77DDE11018A28D7B00BE8291 /* RestForIOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestForIOSTests-Info.plist"; sourceTree = "<group>"; };
+		77DDE11218A28D7B00BE8291 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		77DDE11418A28D7B00BE8291 /* RestForIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestForIOSTests.m; sourceTree = "<group>"; };
+		77DDE11E18A28DA100BE8291 /* RestForIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestForIOS.h; sourceTree = "<group>"; };
+		77DDE11F18A28DA100BE8291 /* RestForIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestForIOS.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77DDE0F218A28D7B00BE8291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77DDE0F918A28D7B00BE8291 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77DDE10218A28D7B00BE8291 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77DDE10718A28D7B00BE8291 /* XCTest.framework in Frameworks */,
+				77DDE10D18A28D7B00BE8291 /* libRestForIOS.a in Frameworks */,
+				77DDE10A18A28D7B00BE8291 /* UIKit.framework in Frameworks */,
+				77DDE10818A28D7B00BE8291 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77DDE0EC18A28D7B00BE8291 = {
+			isa = PBXGroup;
+			children = (
+				77DDE0FA18A28D7B00BE8291 /* RestForIOS */,
+				77DDE10E18A28D7B00BE8291 /* RestForIOSTests */,
+				77DDE0F718A28D7B00BE8291 /* Frameworks */,
+				77DDE0F618A28D7B00BE8291 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77DDE0F618A28D7B00BE8291 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77DDE0F518A28D7B00BE8291 /* libRestForIOS.a */,
+				77DDE10518A28D7B00BE8291 /* RestForIOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77DDE0F718A28D7B00BE8291 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77DDE0F818A28D7B00BE8291 /* Foundation.framework */,
+				77DDE10618A28D7B00BE8291 /* XCTest.framework */,
+				77DDE10918A28D7B00BE8291 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77DDE0FA18A28D7B00BE8291 /* RestForIOS */ = {
+			isa = PBXGroup;
+			children = (
+				77DDE11E18A28DA100BE8291 /* RestForIOS.h */,
+				77DDE11F18A28DA100BE8291 /* RestForIOS.m */,
+				77DDE0FB18A28D7B00BE8291 /* Supporting Files */,
+			);
+			path = RestForIOS;
+			sourceTree = "<group>";
+		};
+		77DDE0FB18A28D7B00BE8291 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77DDE0FC18A28D7B00BE8291 /* RestForIOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77DDE10E18A28D7B00BE8291 /* RestForIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				77DDE11418A28D7B00BE8291 /* RestForIOSTests.m */,
+				77DDE10F18A28D7B00BE8291 /* Supporting Files */,
+			);
+			path = RestForIOSTests;
+			sourceTree = "<group>";
+		};
+		77DDE10F18A28D7B00BE8291 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77DDE11018A28D7B00BE8291 /* RestForIOSTests-Info.plist */,
+				77DDE11118A28D7B00BE8291 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77DDE0F418A28D7B00BE8291 /* RestForIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77DDE11818A28D7B00BE8291 /* Build configuration list for PBXNativeTarget "RestForIOS" */;
+			buildPhases = (
+				77DDE0F118A28D7B00BE8291 /* Sources */,
+				77DDE0F218A28D7B00BE8291 /* Frameworks */,
+				77DDE0F318A28D7B00BE8291 /* CopyFiles */,
+				77DDE12518A291DB00BE8291 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestForIOS;
+			productName = RestForIOS;
+			productReference = 77DDE0F518A28D7B00BE8291 /* libRestForIOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		77DDE10418A28D7B00BE8291 /* RestForIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77DDE11B18A28D7B00BE8291 /* Build configuration list for PBXNativeTarget "RestForIOSTests" */;
+			buildPhases = (
+				77DDE10118A28D7B00BE8291 /* Sources */,
+				77DDE10218A28D7B00BE8291 /* Frameworks */,
+				77DDE10318A28D7B00BE8291 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77DDE10C18A28D7B00BE8291 /* PBXTargetDependency */,
+			);
+			name = RestForIOSTests;
+			productName = RestForIOSTests;
+			productReference = 77DDE10518A28D7B00BE8291 /* RestForIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77DDE0ED18A28D7B00BE8291 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = AdeeshaEkanayake;
+			};
+			buildConfigurationList = 77DDE0F018A28D7B00BE8291 /* Build configuration list for PBXProject "RestForIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 77DDE0EC18A28D7B00BE8291;
+			productRefGroup = 77DDE0F618A28D7B00BE8291 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77DDE0F418A28D7B00BE8291 /* RestForIOS */,
+				77DDE10418A28D7B00BE8291 /* RestForIOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77DDE10318A28D7B00BE8291 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77DDE11318A28D7B00BE8291 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77DDE12518A291DB00BE8291 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if [ ${CONFIGURATION} == \"Release\" ]; then\nAPPLEDOC_PATH=`which appledoc`\nif [ $APPLEDOC_PATH ]; then\n$APPLEDOC_PATH \\\n--project-name ${PRODUCT_NAME} \\\n--project-company \"Adeesha Ekanayake\" \\\n--company-id \"com.adeeshaek\" \\\n--output ${PRODUCT_NAME}Docs \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-install-docset \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n${PROJECT_DIR}/${PRODUCT_NAME}\nfi;\n#fi;";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77DDE0F118A28D7B00BE8291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77DDE12018A28DA100BE8291 /* RestForIOS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77DDE10118A28D7B00BE8291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77DDE11518A28D7B00BE8291 /* RestForIOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77DDE10C18A28D7B00BE8291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77DDE0F418A28D7B00BE8291 /* RestForIOS */;
+			targetProxy = 77DDE10B18A28D7B00BE8291 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77DDE11118A28D7B00BE8291 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77DDE11218A28D7B00BE8291 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77DDE11618A28D7B00BE8291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		77DDE11718A28D7B00BE8291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77DDE11918A28D7B00BE8291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RestForIOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RestForIOS/RestForIOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		77DDE11A18A28D7B00BE8291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RestForIOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RestForIOS/RestForIOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		77DDE11C18A28D7B00BE8291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RestForIOS/RestForIOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RestForIOSTests/RestForIOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		77DDE11D18A28D7B00BE8291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RestForIOS/RestForIOS-Prefix.pch";
+				INFOPLIST_FILE = "RestForIOSTests/RestForIOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77DDE0F018A28D7B00BE8291 /* Build configuration list for PBXProject "RestForIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77DDE11618A28D7B00BE8291 /* Debug */,
+				77DDE11718A28D7B00BE8291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77DDE11818A28D7B00BE8291 /* Build configuration list for PBXNativeTarget "RestForIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77DDE11918A28D7B00BE8291 /* Debug */,
+				77DDE11A18A28D7B00BE8291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		77DDE11B18A28D7B00BE8291 /* Build configuration list for PBXNativeTarget "RestForIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77DDE11C18A28D7B00BE8291 /* Debug */,
+				77DDE11D18A28D7B00BE8291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77DDE0ED18A28D7B00BE8291 /* Project object */;
+}
