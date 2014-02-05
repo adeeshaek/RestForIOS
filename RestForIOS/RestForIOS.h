@@ -122,6 +122,8 @@
  *
  *	@author	Adeesha Ekanayake
  *
+ *  @detail thanks to Philippe Leybeart and Joe at http://stackoverflow.com/questions/3829068/hash-a-password-string-using-sha512-like-c-sharp
+ *
  *	@date	2014-02-05
  */
 +(NSString*)convertToSHA512:(NSString *)source;
