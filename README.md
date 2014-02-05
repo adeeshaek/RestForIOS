@@ -5,7 +5,7 @@ A simple REST framework for use in iOS applications.
 
 Installation
 ------------
-* Cocoapods: The quickest way to install RestForIOS is to use Cocoapods. Add the pod 'RestForIOS' to your Podfile
+* Cocoapods: The quickest way to install RestForIOS is to use Cocoapods. Add the pod **'RestForIOS'** to your Podfile
 * If you don't want to use cocoapods (and you really should), just include RestForIOS.h to make use of the class methods for accessing RESTful APIs
 
 Usage
