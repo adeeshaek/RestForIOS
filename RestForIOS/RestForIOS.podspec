@@ -16,13 +16,13 @@ Pod::Spec.new do |s|
 
   s.homepage     = "http://github.com/adeeshaek/RestForIOS"
 
-  s.license      = 'MIT'
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Adeesha Ekanayake" => "adeeshaekanayake@gmail.com" }
 
   s.platform     = :ios
   s.source       = { :git => "https://github.com/adeeshaek/RestForIOS.git", :tag => "v1.0" }
 
-  s.source_files  = 'Classes', 'Classes/**/*.{h,m}'
+  s.source_files  = '*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
   s.framework  = 'CommonCrypto'
 end
