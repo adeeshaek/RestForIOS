@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RestForIOS"
-  s.version      = "1.0"
+  s.version      = "1.0.0"
   s.summary      = "A simple, easy-to-use library of static functions for accessing RESTful APIs in iOS"
 
   s.description  = <<-DESC
