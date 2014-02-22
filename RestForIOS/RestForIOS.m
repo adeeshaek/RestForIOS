@@ -157,14 +157,36 @@
 +(NSDictionary*)parseJSONToDict:(NSString *)dataString
 {
     NSError *error;
-    NSDictionary* output = [NSJSONSerialization JSONObjectWithData:[dataString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
+    NSDictionary* output;
+    if (dataString != nil)
+    {
+         output = [NSJSONSerialization JSONObjectWithData:[dataString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
+    }
+    
+    else
+    {
+        output = nil;
+    }
+
     return output;
 }
 
 +(NSArray*)parseJSONToArray:(NSString *)dataString
 {
     NSError *error;
-    NSArray* output = [NSJSONSerialization JSONObjectWithData:[dataString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
+    NSArray* output;
+    
+    if (dataString != nil)
+    {
+        output = [NSJSONSerialization JSONObjectWithData:[dataString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
+    }
+    
+    else
+    {
+        output = nil;
+    }
+    
+
     return output;
 }
 
