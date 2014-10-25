@@ -32,7 +32,7 @@
  *
  *	@date	2014-02-05
  */
-+(NSString*)postJSONWithData:(NSDictionary *)dataDict andURL:(NSString *)url andCallback:(void (^)(void))errorCallback;
++(NSString*)postJSONWithData:(NSDictionary *)dataDict andURL:(NSString *)url andCallback:(void (^)(long))errorCallback;
 
 /**
  *	@brief	POSTS the provided JSON with the given data, and calls the given callback on error
@@ -47,7 +47,7 @@
  *
  *	@date	2014-02-05
  */
-+(NSString*)postHTTPDataWithUrl:(NSString *)url andParameters:(NSDictionary *)parameters andCallback:(void (^)(void))errorCallback;
++(NSString*)postHTTPDataWithUrl:(NSString *)url andParameters:(NSDictionary *)parameters andCallback:(void (^)(long))errorCallback;
 
 #pragma mark-
 #pragma mark GET methods
@@ -65,7 +65,7 @@
  *
  *	@date	2014-02-05
  */
-+(NSString*)getHTTPDataWithUrl:(NSString *)url andParameters:(NSDictionary *)parameters andCallback:(void (^)(void))errorCallback;
++(NSString*)getHTTPDataWithUrl:(NSString *)url andParameters:(NSDictionary *)parameters andCallback:(void (^)(long))errorCallback;
 
 /**
  *	@brief	GETS the given url with the specified paramters
@@ -79,7 +79,7 @@
  *
  *	@date	2014-02-05
  */
-+(NSString*)getHTTPDataWithUrl:(NSString*)url andCallback:(void (^)(void))errorCallback;
++(NSString*)getHTTPDataWithUrl:(NSString*)url andCallback:(void (^)(long))errorCallback;
 
 #pragma mark-
 #pragma mark JSON parsing methods
