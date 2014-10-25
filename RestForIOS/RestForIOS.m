@@ -12,7 +12,7 @@
 @implementation RestForIOS
 
 #pragma mark lower level methods
-+(NSString*)postJSONWithData:(NSDictionary *)dataDict andURL:(NSString *)url andCallback:(void (^)(void))errorCallback
++(NSString*)postJSONWithData:(NSDictionary *)dataDict andURL:(NSString *)url andCallback:(void (^)(long))errorCallback
 {
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:[NSURL URLWithString:url]];
@@ -40,7 +40,7 @@
     if([responseCode statusCode] != 200){
         //if you need to use a callback method here, use the getHTTPDataWithCallback method
         NSLog(@"Error with JSON request"); //call the error handler
-        errorCallback();
+        errorCallback(responseCode.statusCode);
         
         return nil;
     }
@@ -53,7 +53,7 @@
 }
 
 
-+(NSString*)postHTTPDataWithUrl:(NSString *)url andParameters:(NSDictionary *)parameters andCallback:(void (^)(void))errorCallback
++(NSString*)postHTTPDataWithUrl:(NSString *)url andParameters:(NSDictionary *)parameters andCallback:(void (^)(long))errorCallback
 {
     NSString* response;
     
@@ -101,7 +101,7 @@
     if([responseCode statusCode] != 200){
         //if you need to use a callback method here, use the getHTTPDataWithCallback method
         NSLog(@"Error with JSON request"); //call the error handler
-        errorCallback();
+        errorCallback(responseCode.statusCode);
         
         return nil;
     }
@@ -113,7 +113,7 @@
     return response;
 }
 
-+(NSString*)getHTTPDataWithUrl:(NSString *)url andParameters:(NSDictionary *)parameters andCallback:(void (^)(void))errorCallback
++(NSString*)getHTTPDataWithUrl:(NSString *)url andParameters:(NSDictionary *)parameters andCallback:(void (^)(long))errorCallback
 {
     NSString* paramString = [RestForIOS parseParamsWithDictionary:parameters];
     
@@ -126,7 +126,7 @@
     return [RestForIOS getHTTPDataWithUrl:urlStringWithParams andCallback:errorCallback];
 }
 
-+(NSString*)getHTTPDataWithUrl:(NSString*)url andCallback:(void (^)(void))errorCallback
++(NSString*)getHTTPDataWithUrl:(NSString*)url andCallback:(void (^)(long))errorCallback
 {
     NSString* theData;
     
@@ -142,7 +142,7 @@
     if([responseCode statusCode] != 200){
         //NSLog(@"Error getting %@, HTTP status code %i", url, [responseCode statusCode]);
         
-        errorCallback(); //call the error handler
+        errorCallback(responseCode.statusCode); //call the error handler
         
         return nil;
     }
